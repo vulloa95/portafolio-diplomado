@@ -1,0 +1,65 @@
+# ==========================================================
+# .gitignore - Proyecto de análisis espacial con notebooks
+# Diplomado en Análisis Espacial de Datos - FAU U. de Chile
+# ==========================================================
+
+# ---------- Jupyter ----------
+# Copias automáticas que Jupyter guarda al editar
+.ipynb_checkpoints/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Variables de entorno y claves (por si en el futuro usas alguna API)
+.env
+
+# ---------- Datos espaciales pesados ----------
+# GitHub rechaza archivos de más de 100 MB.
+# Si tus datos son livianos y públicos, puedes borrar o comentar estas líneas.
+
+# Shapefiles (todos sus componentes)
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.sbn
+*.sbx
+*.qix
+
+# Rásters
+*.tif
+*.tiff
+
+# Otros formatos que suelen ser pesados
+*.gpkg
+*.gdb/
+*.zip
+
+# Carpeta de datos (descomenta si guardas los datos en /data)
+# data/
+
+# ---------- QGIS ----------
+# Archivos temporales y de respaldo
+*.qgs~
+*.qgz~
+*_attachments.zip
+
+# ---------- Sistema operativo ----------
+# Windows
+Thumbs.db
+desktop.ini
+
+# Mac
+.DS_Store
+
+# ---------- Editores ----------
+.vscode/
+.idea/
